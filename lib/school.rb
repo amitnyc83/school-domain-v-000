@@ -32,7 +32,7 @@ end
 
 class School
 
-school = School.new
+
   def initialize(roster)
   end
 
