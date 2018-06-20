@@ -39,8 +39,8 @@ class School
   @roster = {}
   end
 
-  def roster(roster)
-    @roster
+  def roster
+    @roster 
   end
 
 end
