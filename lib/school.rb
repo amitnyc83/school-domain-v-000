@@ -33,8 +33,8 @@ end
 class School
 
 
-  def initialize(school)
-    @school = school
+  def initialize(roster)
+    @roster = roster
   end
 
 end
