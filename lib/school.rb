@@ -59,8 +59,8 @@ def grade(grade)
 end
 
 def sort
-  @roster.each do |key, value|
-    value.sort!
+  @roster.each do |key, value| #iterate over the instance varibale roster
+    value.sort! #use the sort method to premantly sort the values for the array
   end
 end
 
