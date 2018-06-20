@@ -51,11 +51,15 @@ class School
     else
       @roster[grade] = [student_name] # else roster instance variable creatyes a key[grade] and the value equals to the student's name
     end
-end
+  end
 
 
 def grade(grade)
    @roster[grade]
 end
+
+def grade(grade)
+ @roster[grade].sort
+  
 
 end
