@@ -34,7 +34,7 @@ class School
 
 
   def initialize(roster)
-    ROSTER = {}
+  @roster = roster 
   end
 
 end
