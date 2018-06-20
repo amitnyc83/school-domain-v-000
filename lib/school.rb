@@ -33,14 +33,30 @@ end
 class School
 
 
-
+#when .new is called on the class School, the method initializes with a name pass as an argument to school like ("Bayside High School") 
   def initialize(name)
-  @name = name
-  @roster = {}
+  @name = name #an instance variable is created that equals to the name argument 
+  @roster = {} # another instances variable is created that is an empty hash is created after the name instance varibale 
   end
 
-  def roster
-    @roster 
+  def roster #this method will return the instances variable that is an empty hash after its created
+    @roster #this is where it returns it
   end
+
+
+
+  def add_student(student_name,grade) #creates a method called add_student which takes 2 arguments; 1)student_name and thier grades
+    if @roster[grade] != nil # if the instance varibale roster with a key with grade is NOT equal to NIL
+      @roster[grade] << student_name #then push the students name to the roster varibale with that key[grade]
+    else
+      @roster[grade] = [student_name] # else roster instance variable creatyes a key[grade] and the value equals to the student's name 
+    end
+  end
+end
+
+
+def grade(grade)
+  return @roster[grade]
+
 
 end
