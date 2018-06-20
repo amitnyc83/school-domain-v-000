@@ -58,8 +58,10 @@ def grade(grade)
    @roster[grade]
 end
 
-def grade(grade)
- @roster[grade].sort
+def sort
+  @roster.each do |key, value|
+    value.sort!
+  end
 end
 
 end
