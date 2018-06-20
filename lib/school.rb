@@ -60,6 +60,6 @@ end
 
 def grade(grade)
  @roster[grade].sort
-  
+end
 
 end
